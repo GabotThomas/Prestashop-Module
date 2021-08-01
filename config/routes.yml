@@ -1,0 +1,22 @@
+demogrid_admin_index:
+    path: demo-grid/ordertunnel
+    methods: [GET]
+    defaults:
+        _controller: 'DemoGrid\Controller\Admin\OrderTunnelController::indexAction'
+         # small hack to make Modules active on side menu when our page is rendered
+        _legacy_controller: AdminDemoGrid
+
+demogrid_admin_search:
+    path: demo-grid/ordertunnel
+    methods: [POST]
+    defaults:
+        _controller: 'DemoGrid\Controller\Admin\OrderTunnelController::searchAction'
+        _legacy_controller: AdminDemoGrid
+
+demogrid_admin_orderview:
+    path: demo-grid/orderview
+    methods: [GET]
+    defaults:
+        _controller: 'DemoGrid\Controller\Admin\OrderTunnelController::orderviewAction'
+         # small hack to make Modules active on side menu when our page is rendered
+        _legacy_controller: DemoGrid
